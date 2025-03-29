@@ -29,7 +29,7 @@
 
 #### Пример запроса
 
-**GET /api/employees/1**:
+**GET /api/employees/1**
 
     GET http://localhost:8080/api/employees/1
 
@@ -75,7 +75,7 @@
     "catIds": [1, 5]
     }
 
-**DELETE /api/employees/1:**
+**DELETE /api/employees/1**
 
     DELETE http://localhost:8080/api/employees/1
 
@@ -88,7 +88,7 @@
 
 #### Пример запроса
 
-**GET /api/cats/1****:
+**GET /api/cats/1**
 
     GET http://localhost:8080/api/cats/1
 
