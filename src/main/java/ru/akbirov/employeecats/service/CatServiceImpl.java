@@ -10,8 +10,6 @@ import ru.akbirov.employeecats.exception.EmployeeNotFoundException;
 import ru.akbirov.employeecats.repository.CatRepository;
 import ru.akbirov.employeecats.repository.EmployeeRepository;
 
-
-
 @Service
 @RequiredArgsConstructor
 public class CatServiceImpl implements CatService {
