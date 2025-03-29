@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.akbirov.employeecats.dto.CatAddDTO;
+import ru.akbirov.employeecats.dto.CatGetDTO;
 import ru.akbirov.employeecats.dto.CatUpdateDTO;
 import ru.akbirov.employeecats.entity.Cat;
 import ru.akbirov.employeecats.mapper.CatMapper;
@@ -20,7 +21,7 @@ public class CatController {
     private final CatMapper catMapper;
 
     @GetMapping("/{catId}")
-    public ResponseEntity<Cat> get(@PathVariable Long catId) {
+    public ResponseEntity<CatGetDTO> get(@PathVariable Long catId) {
         return ResponseEntity.ok(catService.findById(catId));
     }
 

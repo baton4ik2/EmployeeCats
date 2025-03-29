@@ -13,5 +13,5 @@ public class CatAddDTO {
 
     private String color;
 
-
+    private Long employeeId;
 }

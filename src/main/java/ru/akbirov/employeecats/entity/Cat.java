@@ -1,5 +1,6 @@
 package ru.akbirov.employeecats.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import lombok.Data;
@@ -18,5 +19,6 @@ public class Cat {
 
     @ManyToOne
     @JoinColumn(name = "employee_id")
+    @JsonBackReference
     private Employee employee;
 }

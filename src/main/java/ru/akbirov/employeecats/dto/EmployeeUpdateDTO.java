@@ -16,5 +16,5 @@ public class EmployeeUpdateDTO {
 
     private String lastName;
 
-    private List<Cat> cat;
+    private List<Long> catIds;
 }
